@@ -1,0 +1,5 @@
+{
+  "efficient": 32,
+  "naive": 128,
+  "gpu-compact": 128
+}

@@ -1,0 +1,13 @@
+========= COMPUTE-SANITIZER
+PASS cpu               408 cases
+PASS naive             408 cases
+PASS efficient         408 cases
+PASS thrust            408 cases
+PASS cpu-compact       408 cases
+PASS cpu-scan-compact  408 cases
+PASS gpu-compact       408 cases
+All 2856 checks passed (27 sizes, 5 patterns, 3 block sizes, lecture example).
+Example input:   [3 1 7 0 4 1 6 3]
+Exclusive scan: [0 3 4 11 11 15 16 22]
+Compaction:     [3 1 7 4 1 6 3]
+========= ERROR SUMMARY: 0 errors

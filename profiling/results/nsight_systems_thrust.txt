@@ -1,0 +1,25 @@
+Generating SQLite file C:\Users\zjkel\Desktop\CIS5650\Project2-Stream-Compaction\profiling\results/nsight_systems_thrust.sqlite from C:\Users\zjkel\Desktop\CIS5650\Project2-Stream-Compaction\profiling\results/nsight_systems_thrust.nsys-rep
+Processing [C:\Users\zjkel\Desktop\CIS5650\Project2-Stream-Compaction\profiling\results/nsight_systems_thrust.sqlite] with [C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.1.3\target-windows-x64\reports\cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+59.6,103838,6,17306.3,17455.0,14496,19872,2782.0,"void cub::_V_300304_SM_860::detail::scan::DeviceScanKernel<cub::_V_300304_SM_860::detail::scan::policy_hub<int, int, int, unsigned int, cuda::std::__4::plus<void>>::Policy1000, thrust::_V_300304_SM_860::detail::normal_iterator<thrust::_V_300304_SM_860::device_ptr<int>>, thrust::_V_300304_SM_860::detail::normal_iterator<thrust::_V_300304_SM_860::device_ptr<int>>, cub::_V_300304_SM_860::ScanTileState<int, (bool)1>, cuda::std::__4::plus<void>, cub::_V_300304_SM_860::detail::InputValue<int, int *>, unsigned int, int, (bool)0, int>(T2, T3, T4, int, T5, T6, T7)"
+34.8,60576,6,10096.0,11040.0,5664,11520,2261.2,"void cub::_V_300304_SM_860::detail::for_each::static_kernel<cub::_V_300304_SM_860::detail::for_each::policy_hub_t::policy_500_t, unsigned long long, thrust::_V_300304_SM_860::cuda_cub::__uninitialized_fill::functor<thrust::_V_300304_SM_860::device_ptr<int>, int>>(T2, T3)"
+5.6,9759,6,1626.5,1631.5,1568,1696,42.5,"void cub::_V_300304_SM_860::detail::scan::DeviceScanInitKernel<cub::_V_300304_SM_860::ScanTileState<int, (bool)1>>(T1, int)"
+
+Processing [C:\Users\zjkel\Desktop\CIS5650\Project2-Stream-Compaction\profiling\results/nsight_systems_thrust.sqlite] with [C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.1.3\target-windows-x64\reports\cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+86.6,110782932,18,6154607.3,93683.0,50929,108995410,25665768.7,cudaMalloc
+6.1,7787604,12,648967.0,593626.0,462992,1020674,170513.8,cudaMemcpyAsync
+3.7,4768174,24,198673.9,139217.5,2590,651290,183918.8,cudaStreamSynchronize
+2.1,2741042,18,152280.1,134489.0,96989,310216,57282.7,cudaFree
+0.5,692109,1,692109.0,692109.0,692109,692109,0.0,cuLibraryUnload
+0.4,570129,18,31673.8,20394.5,4870,137157,33110.2,cudaLaunchKernel
+0.3,447651,6,74608.5,34284.0,30429,202756,70784.4,cudaEventSynchronize
+0.1,85759,12,7146.6,6740.0,4720,10090,1601.1,cudaEventRecord
+0.0,12140,2,6070.0,6070.0,790,11350,7467.0,cudaEventDestroy
+0.0,11450,18,636.1,500.0,220,1710,422.0,cuKernelGetName
+0.0,11100,1,11100.0,11100.0,11100,11100,0.0,cuModuleGetLoadingMode
+0.0,9730,2,4865.0,4865.0,900,8830,5607.4,cudaEventCreate
+0.0,4290,1,4290.0,4290.0,4290,4290,0.0,cuCtxSynchronize
+0.0,2320,2,1160.0,1160.0,800,1520,509.1,cuLibraryGetKernel
+0.0,590,1,590.0,590.0,590,590,0.0,cuDeviceGetLuid
+
